@@ -2,3 +2,13 @@ baseURL = "/"
 languageCode = "en-us"
 title = "johnjago.com"
 theme = "timeless"
+
+[menu]
+  [[menu.main]]
+    name = "say hi"
+    url = "about"
+    weight = 2
+  [[menu.main]]
+    name = "projects"
+    url = "/"
+    weight = 3

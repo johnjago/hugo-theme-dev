@@ -22,10 +22,12 @@ time, mark, audio, video {
 body {
   color: #333;
   font-size: 1.1rem;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: 'Bitstream Charter',Palatino,'Palatino Linotype','Palatino LT STD','Book Antiqua',Georgia,serif;
+  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; */
   line-height: 1.5;
-  margin: 10rem auto;
-  width: 40rem;
+  margin: 6rem auto;
+  padding: 1rem;
+  max-width: 40rem;
 }
 
 h1 {
@@ -48,20 +50,18 @@ h3 {
   margin: 1rem 0 .5rem;
 }
 
-.no-bullet {
-  list-style-type: none;
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #999;
 }
 
-.light {
-  color: #999;
+footer a {
+  border: none;
 }
 
-.mb-1 {
-  margin-bottom: 1rem;
-}
-
-.mt-5 {
-  margin-top: 5rem;
+a:hover {
+  background: #fbf3f3;
 }
 
 section ul {
@@ -69,13 +69,14 @@ section ul {
   margin-bottom: 1.5rem;
 }
 
+li {
+  margin: 0.5rem 0;
+}
+
 footer li {
   display: inline;
   margin-right: 1rem;
-}
-
-li {
-  margin: 0.5rem 0;
+  white-space: nowrap;
 }
 
 p {
@@ -91,4 +92,20 @@ pre {
   padding: 1em;
   margin-bottom: 1.5rem;
   font-size: 1rem;
+}
+
+.no-bullet {
+  list-style-type: none;
+}
+
+.light {
+  color: #767676;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
 }
