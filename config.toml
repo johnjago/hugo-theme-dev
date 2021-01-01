@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "johnjago.com"
 theme = "timeless"
 
+[params]
+  description = "Thoughts and ideas on software and language."
+
 [menu]
   [[menu.main]]
     name = "say hi"
