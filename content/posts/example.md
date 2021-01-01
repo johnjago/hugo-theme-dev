@@ -24,9 +24,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum met
 
 ### Header 3
 
-Nulla libero turpis, lacinia vitae cursus ut, auctor dictum nisl. Fusce varius felis nec sem ullamcorper, at convallis nisi vestibulum. Duis risus odio, porta sit amet placerat mollis, tincidunt non mauris. Suspendisse fringilla, `odio a dignissim pharetra`, est urna sollicitudin urna, eu scelerisque magna ex vitae tellus.
+Nulla libero turpis, lacinia vitae cursus ut, auctor dictum nisl. Fusce varius felis nec sem ullamcorper, at convallis nisi vestibulum. Duis risus odio, porta sit amet placerat mollis, tincidunt non mauris. Suspendisse fringilla, `odio a dignissim pharetra`, est urna sollicitudin urna, <pre>eu scelerisque magna ex vitae</pre> tellus.
 
-```css
+```
 /* PostCSS code */
 
 pre {
@@ -50,7 +50,7 @@ pre {
 }
 ```
 
-```js
+```
 // JS code
 
 const menuTrigger = document.querySelector('.menu-trigger')

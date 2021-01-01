@@ -19,11 +19,31 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+@font-face {
+  font-family: Charter;
+  font-style: normal;
+  font-weight: normal;
+  src: local('CharterBT-Roman'), url('/fonts/charter_regular-webfont.woff');
+}
+
+@font-face {
+  font-family: Charter;
+  font-style: normal;
+  font-weight: bold;
+  src: local('CharterBT-Bold'), url('/fonts/charter_bold-webfont.woff');
+}
+
+@font-face {
+  font-family: Charter;
+  font-style: italic;
+  font-weight: normal;
+  src: local('CharterBT-Italic'), url('/fonts/charter_italic-webfont.woff');
+}
+
 body {
   color: #333;
   font-size: 1.1rem;
-  font-family: 'Bitstream Charter',Palatino,'Palatino Linotype','Palatino LT STD','Book Antiqua',Georgia,serif;
-  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; */
+  font-family: 'Charter', Georgia, serif;
   line-height: 1.5;
   margin: 6rem auto;
   padding: 1rem;
@@ -83,16 +103,34 @@ p {
   margin-bottom: 1.5rem;
 }
 
+code,
+pre {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 1rem;
+}
+
+code {
+  background: #e5e5e5;
+  color: #333;
+  padding: .125rem .25rem 0;
+}
+
 pre {
   background: #282c34;
   border-radius: 6px;
-  color: #f2f2f2 !important;
   max-width: 100%;
   overflow-x: auto;
   padding: 1em;
   margin-bottom: 1.5rem;
-  font-size: 1rem;
 }
+
+pre code {
+  color: #f2f2f2 !important;
+  background: none;
+  padding: 0;
+}
+
+
 
 .no-bullet {
   list-style-type: none;

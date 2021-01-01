@@ -6,4 +6,8 @@
   <base href="{{ .Site.BaseURL }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/main.css" | absURL }}" />
+  <script>
+    // To prevent Firefox FOUC
+    let FF_FOUC_FIX;
+  </script>
 </head>
