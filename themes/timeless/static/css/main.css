@@ -156,3 +156,7 @@ pre code {
 .inline {
   display: inline;
 }
+
+.block {
+  display: block;
+}
