@@ -41,14 +41,14 @@ time, mark, audio, video {
 }
 
 body {
-  color: #333;
   background: #fbfbfb;
-  font-size: 1.2rem;
+  color: #333;
   font-family: 'Charter', Georgia, serif;
+  font-size: 1.2rem;
   line-height: 1.5;
   margin: 6rem auto;
+  max-width: 45rem;
   padding: 1rem;
-  max-width: 40rem;
 }
 
 h1 {
@@ -73,9 +73,9 @@ h3 {
 }
 
 a {
+  border-bottom: 1px solid #999;
   color: #333;
   text-decoration: none;
-  border-bottom: 1px solid #999;
 }
 
 footer a {
@@ -87,8 +87,8 @@ a:hover {
 }
 
 section ul {
-  padding-left: 3rem;
   margin-bottom: 1.5rem;
+  padding-left: 3rem;
 }
 
 li {
@@ -113,23 +113,30 @@ pre {
 
 code {
   background: #e5e5e5;
+  border-radius: 3px;
   color: #333;
-  padding: .125rem .25rem 0;
+  padding: 3px 5px;
 }
 
 pre {
-  background: #282c34;
+  background: #242424;
   border-radius: 6px;
+  margin-bottom: 1.5rem;
   max-width: 100%;
   overflow-x: auto;
   padding: 1em;
-  margin-bottom: 1.5rem;
 }
 
 pre code {
-  color: #f2f2f2 !important;
   background: none;
+  color: #f2f2f2 !important;
   padding: 0;
+}
+
+blockquote {
+  border-left: 5px solid salmon;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .no-bullet {
@@ -148,9 +155,19 @@ pre code {
   margin-top: 5rem;
 }
 
-.posts-date {
+.post-date {
   display: inline-block;
   width: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .post-date {
+    display: block;
+  }
+
+  .post-link {
+    margin-left: 1rem;
+  }
 }
 
 .inline {
